@@ -3,133 +3,221 @@
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>FLEX 영상 소개</title>
+ <title>파노라마 페이지</title>
  <link href="css/reset.css" rel="stylesheet">
  <link href="css/style.css" rel="stylesheet">
- <link href="favicon.ico" rel="shortcut icon">
- <script src="https://kit.fontawesome.com/5a7895e034.js" crossorigin="anonymous"></script>
+ <link href="favicon.ico" rel="shorcut icon">
  <script src="js/jquery-3.7.0.min.js"></script>
+ <script src="https://kit.fontawesome.com/5a7895e034.js" crossorigin="anonymous"></script>
  <script src="js/script.js" defer></script>
 </head>
 <body>
- <div class="container"><!--100%*100vh,배경색#333-->
-  <header class="header"><!--20%*100%-->
-   <div class="logo">DCODELAB</div>
-   <div class="copyright">
-    2021 DCODELAB<br>ALL RIGHT RESERVED.
-   </div>
-  </header>
-  <ul class="nav"><!--absolute,오른쪽 위쯤 배치-->
-   <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
-   <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-  </ul>
-  <div class="contents"><!--80%*100%-->
-   <div class="conbox box1">
+ <div class="container">
+  <video src="imgs/bg.mp4" autoplay loop muted></video>
+  <div class="wrap"><!--600*800, border,화면 가운데쯤 배치-->
+   <div class="box box1">
+    <p class="box_title">Co Company</p>
     <div class="inner">
-     <div>
-      <p>01</p>
-      <p>
-       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-      </p>
+     <div class="icon">
+      <p>Android</p>
+      <i class="fa-brands fa-android"></i>
      </div>
-     <video src="video/vid1.mp4" loop muted></video>
+     <div class="icon">
+      <p>Apple</p>
+      <i class="fa-brands fa-apple"></i>
+     </div>
+     <div class="icon">
+      <p>Twitter</p>
+      <i class="fa-brands fa-twitter"></i>
+     </div>
+     <div class="icon">
+      <p>Facebook</p>
+      <i class="fa-brands fa-facebook"></i>
+     </div>
+     <div class="icon">
+      <p>Youtube</p>
+      <i class="fa-brands fa-youtube"></i>
+     </div>
+     <div class="icon">
+      <p>Google</p>
+      <i class="fa-brands fa-google-play"></i>
+     </div><!-- icon 6 end (290*254) -->
     </div><!-- inner end-->
-   </div><!-- box1 end-->
-   <div class="conbox box2">
+   </div><!-- box 1 end -->
+   <div class="box box2">
+    <p class="box_title">What's New</p>
     <div class="inner">
-     <div>
-      <p>02</p>
-      <p>
-       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-      </p>
-     </div>
-     <video src="video/vid2.mp4" loop muted></video>
-    </div><!-- inner end-->
+     <p>News n Articles</p>
+     <img src="imgs/pattern.jpg" alt="">
+     <p>What is Lorem Ipsum?</p>
+     <p>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      <br><br>
+      Lorem Ipsum has been the industry's standard.<br>
+      dummy text of the printing and typesetting Lorem Ipsum has been the industry's standard.
+     </p>
+    </div><!-- inner end -->
    </div><!-- box2 end-->
-   <div class="conbox box3">
+   <div class="box box3">
+    <p class="box_title">Members</p>
     <div class="inner">
-     <div>
-      <p>03</p>
+     <div class="member">
+      <div class="member_img">
+       <img src="imgs/member1.jpg" alt="">
+      </div>
+      <div class="member_info">
+       <p>Member Infomation1</p>
+       <p>
+        Here comes Member Infomation contents in detail. Here comes Member Infomation contents in detail.
+       </p>
+       <p>2023-11-30</p>
+      </div>
+     </div><!-- member 1 end-->
+     <div class="member">
+      <div class="member_img">
+       <img src="imgs/member2.jpg" alt="">
+      </div>
+      <div class="member_info">
+       <p>Member Infomation2</p>
+       <p>
+        Here comes Member Infomation contents in detail. Here comes Member Infomation contents in detail.
+       </p>
+       <p>2023-11-30</p>
+      </div>
+     </div><!-- member 2 end-->
+     <div class="member">
+      <div class="member_img"><!--120*120-->
+       <img src="imgs/member3.jpg" alt="">
+      </div>
+      <div class="member_info">
+       <p>Member Infomation3</p>
+       <p>
+        Here comes Member Infomation contents in detail. Here comes Member Infomation contents in detail.
+       </p>
+       <p>2023-11-30</p>
+      </div>
+     </div><!-- member 3 end-->
+    </div><!-- inner end-->
+   </div><!-- box 3 end-->
+   <div class="box box4">
+    <p class="box_title">Advertisement</p>
+    <div class="inner">
+     <div class="promotion">
+      <video src="imgs/intro.mp4" controls></video>
+      <p>Promotion</p>
       <p>
-       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+       Here comes Promotion contents in detail.Here comes Promotion contents in detail.Here comes Promotion contents in detail.
+       <br><br>
+       Here comes Promotion contents in detail.Here comes Promotion contents in detail.
       </p>
      </div>
-     <video src="video/vid3.mp4" loop muted></video>
-    </div><!-- inner end-->
-   </div><!-- box3 end-->
-   <div class="conbox box4">
-    <div class="inner">
-     <div>
-      <p>04</p>
+     <div class="infomation">
+      <p>Information</p>
       <p>
-       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+       <a href="#">Here comes Text dscription</a>
+       <span>2023.11.30</span>
       </p>
      </div>
-     <video src="video/vid4.mp4" loop muted></video>
+    </div>
+   </div><!-- box 4 end-->
+   <div class="box box5">
+    <p class="box_title">DCODELAB</p>
+    <div class="inner">
+     <img src="imgs/tit.png" alt="">
+     <div class="imgbox">
+      <img src="imgs/robot.png" alt="">
+     </div>
+     <img src="imgs/txt.png" alt="">
+     <a href="#">
+      <img src="imgs/btn.png" alt="">
+     </a>
+     <img src="imgs/reflect.png" alt="" class="box5bg">
     </div><!-- inner end-->
-   </div><!-- box4 end-->
-  </div><!-- contents end-->
- <!--popup pages-->
- <div class="page page1">
-  <div class="page_title">
-   <p>01</p>
-   <p>
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-   </p>
-   <button type="button" class="close">
-    CLOSE
-   </button>
-  </div>
-  <div class="page_video">
-   <video src="video/vid1.mp4" autoplay muted loop></video>
-  </div>
- </div><!-- page1 end-->
- <div class="page page2">
-  <div class="page_title">
-   <p>02</p>
-   <p>
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-   </p>
-   <button type="button" class="close">
-    CLOSE
-   </button>
-  </div>
-  <div class="page_video">
-   <video src="video/vid2.mp4" autoplay muted loop></video>
-  </div>
- </div><!-- page2 end-->
- <div class="page page3">
-  <div class="page_title">
-   <p>03</p>
-   <p>
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-   </p>
-   <button type="button" class="close">
-    CLOSE
-   </button>
-  </div>
-  <div class="page_video">
-   <video src="video/vid3.mp4" autoplay muted loop></video>
-  </div>
- </div><!-- page3 end-->
- <div class="page page4">
-  <div class="page_title">
-   <p>04</p>
-   <p>
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-   </p>
-   <button type="button" class="close">
-    CLOSE
-   </button>
-  </div>
-  <div class="page_video">
-   <video src="video/vid4.mp4" autoplay muted loop></video>
-  </div>
- </div><!-- page4 end-->
+   </div><!-- box 5 end-->
+   <div class="box box6">
+    <p class="box_title">Service</p>
+    <div class="inner">
+     <div class="service">
+      <div class="box6icon"><i class="fa-solid fa-network-wired"></i></div>
+      <div class="serv_info">
+       <p>Network Services</p>
+       <p>
+        Here comes the contents for Network
+        Show this in Detail
+       </p>
+      </div>
+     </div><!--service 1 end-->
+     <div class="service">
+      <div class="box6icon"><i class="fa-solid fa-hand"></i></div>
+      <div class="serv_info">
+       <p>Technical Support</p>
+       <p>
+        Here comes the contents for Network
+        Show this in Detail
+       </p>
+      </div>
+     </div>
+     <div class="service">
+      <div class="box6icon"><i class="fa-solid fa-user"></i></div>
+      <div class="serv_info">
+       <p>Customer Servieces</p>
+       <p>
+        Here comes the contents for Network
+        Show this in Detail
+       </p>
+      </div>
+     </div>
+     <div class="service">
+      <div class="box6icon"><i class="fa-solid fa-list"></i></div>
+      <div class="serv_info">
+       <p>Contact Lists</p>
+       <p>
+        Here comes the contents for Network
+        Show this in Detail
+       </p>
+      </div>
+     </div>
+    </div><!-- inner end-->
+   </div><!-- box6 end-->
+   <div class="box box7">
+    <p class="box_title">Promotion</p>
+    <div class="inner">
+     <video src="imgs/loop.mp4" muted loop autoplay></video>
+     <p>
+      Promote<br>
+      Your<br>
+      Company
+     </p>
+     <img src="imgs/line.png" alt="" class="line">
+     <img src="imgs/txt2.png" alt="" class="box7txt">
+    </div><!-- inner end-->
+   </div><!-- box 7 end-->
 
- </div><!-- container end-->
-
-
-
+   <div class="box box8">
+    <p class="box_title">Temperature</p>
+    <div class="inner">
+     <div class="temper temper1">
+      <p>Weather</p>
+      <div>
+       <i class="fa-solid fa-cloud-sun"></i>
+       26˚
+      </div>
+     </div>
+     <div class="temper temper2">
+      <p>Sunny</p>
+      <p>Afternoon temperature</p>
+      <p>23˚</p>
+      <i class="fa-solid fa-sun"></i>
+     </div>
+     <div class="temper temper3">
+      <p>Lightning</p>
+      <p>Night temperature</p>
+      <p>18˚</p>
+      <i class="fa-solid fa-cloud-moon"></i>
+     </div>
+    </div>
+   </div>
+  </div><!-- wrap end-->
+ </div><!--100% * 100vh-->
 </body>
 </html>
